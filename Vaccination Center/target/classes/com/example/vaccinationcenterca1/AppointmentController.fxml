@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.vaccinationcenterca1.Controllers.AppointmentController">
+   <center>
+      <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label text="Booths" />
+            <ChoiceBox fx:id="boothChoiceBox" prefWidth="150.0">
+               <VBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </VBox.margin>
+            </ChoiceBox>
+            <Label text="Patient" />
+            <ChoiceBox fx:id="patientChoiceBox" prefWidth="150.0">
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </ChoiceBox>
+            <TextField fx:id="date" alignment="CENTER" promptText="Date">
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </TextField>
+            <TextField fx:id="time" alignment="CENTER" promptText="Time">
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </TextField>
+            <TextField fx:id="type" alignment="CENTER" promptText="Type">
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </TextField>
+            <TextField fx:id="batchNumber" alignment="CENTER" promptText="Batch number">
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </TextField>
+            <TextField fx:id="vaccinatorDetails" alignment="CENTER" promptText="Vaccinator details">
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </TextField>
+            <TextField fx:id="patientId" alignment="CENTER" promptText="Patient ID">
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </TextField>
+            <Button fx:id="addAppointment" mnemonicParsing="false" onAction="#addAppointment" text="Add appointment" />
+            <Button mnemonicParsing="false" onAction="#completeAppointment" text="Complete appointment" />
+            <Button fx:id="deleteAppointment" mnemonicParsing="false" onAction="#deleteAppointment" text="Cancel Appointment" />
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Label text="Pending Appointments">
+                     <padding>
+                        <Insets top="80.0" />
+                     </padding>
+                  </Label>
+                  <Label text="Completed Appointments">
+                     <padding>
+                        <Insets left="100.0" top="80.0" />
+                     </padding>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox>
+               <children>
+                  <ListView fx:id="appointmentListView" prefHeight="200.0" prefWidth="200.0" />
+                  <ListView fx:id="completedAppointmentListView" prefHeight="200.0" prefWidth="200.0" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </center>
+   <top>
+      <Label text="Appointments" BorderPane.alignment="CENTER" />
+   </top>
+   <bottom>
+
+   </bottom>
+</BorderPane>

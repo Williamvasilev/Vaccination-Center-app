@@ -1,0 +1,176 @@
+<object-stream>
+  <com.example.vaccinationcenterca1.Main_-Data>
+    <VCList>
+      <head>
+        <next>
+          <next>
+            <contents class="com.example.vaccinationcenterca1.VaccinationCenter">
+              <Name>1</Name>
+              <Address>1</Address>
+              <Eircode>1</Eircode>
+              <ParkingSpaces>1</ParkingSpaces>
+              <boothList>
+                <head>
+                  <next>
+                    <next>
+                      <contents class="com.example.vaccinationcenterca1.Booth">
+                        <boothIdentifier>1</boothIdentifier>
+                        <floorLevel>2</floorLevel>
+                        <accessibility>3</accessibility>
+                        <appointmentList>
+                          <head>
+                            <next>
+                              <next>
+                                <contents class="com.example.vaccinationcenterca1.Appointment">
+                                  <date>1</date>
+                                  <time>1</time>
+                                  <type>1</type>
+                                  <batchNumber>1</batchNumber>
+                                  <vaccinatorDetails>1</vaccinatorDetails>
+                                  <patientId>1</patientId>
+                                </contents>
+                                <outer-class reference="../../../.."/>
+                              </next>
+                              <contents class="com.example.vaccinationcenterca1.Appointment">
+                                <date>2</date>
+                                <time>1</time>
+                                <type>1</type>
+                                <batchNumber>1</batchNumber>
+                                <vaccinatorDetails>1</vaccinatorDetails>
+                                <patientId>1</patientId>
+                              </contents>
+                              <outer-class reference="../../.."/>
+                            </next>
+                            <contents class="com.example.vaccinationcenterca1.Appointment">
+                              <date>3</date>
+                              <time>1</time>
+                              <type>1</type>
+                              <batchNumber>1</batchNumber>
+                              <vaccinatorDetails>1</vaccinatorDetails>
+                              <patientId>1</patientId>
+                            </contents>
+                            <outer-class reference="../.."/>
+                          </head>
+                        </appointmentList>
+                      </contents>
+                      <outer-class reference="../../../.."/>
+                    </next>
+                    <contents class="com.example.vaccinationcenterca1.Booth">
+                      <boothIdentifier>2</boothIdentifier>
+                      <floorLevel>2</floorLevel>
+                      <accessibility>3</accessibility>
+                      <appointmentList/>
+                    </contents>
+                    <outer-class reference="../../.."/>
+                  </next>
+                  <contents class="com.example.vaccinationcenterca1.Booth">
+                    <boothIdentifier>3</boothIdentifier>
+                    <floorLevel>2</floorLevel>
+                    <accessibility>3</accessibility>
+                    <appointmentList/>
+                  </contents>
+                  <outer-class reference="../.."/>
+                </head>
+              </boothList>
+            </contents>
+            <outer-class reference="../../../.."/>
+          </next>
+          <contents class="com.example.vaccinationcenterca1.VaccinationCenter">
+            <Name>2</Name>
+            <Address>1</Address>
+            <Eircode>1</Eircode>
+            <ParkingSpaces>1</ParkingSpaces>
+            <boothList/>
+          </contents>
+          <outer-class reference="../../.."/>
+        </next>
+        <contents class="com.example.vaccinationcenterca1.VaccinationCenter">
+          <Name>3</Name>
+          <Address>1</Address>
+          <Eircode>1</Eircode>
+          <ParkingSpaces>1</ParkingSpaces>
+          <boothList/>
+        </contents>
+        <outer-class reference="../.."/>
+      </head>
+    </VCList>
+    <patientList>
+      <head>
+        <next>
+          <next>
+            <contents class="com.example.vaccinationcenterca1.Patient">
+              <patientId>1</patientId>
+              <patientName>1</patientName>
+              <dateOfBirth>1</dateOfBirth>
+              <eircode>1</eircode>
+              <patientAccessibility>1</patientAccessibility>
+              <patientList>
+                <head>
+                  <next>
+                    <next>
+                      <contents class="com.example.vaccinationcenterca1.Appointment" reference="../../../../../../../../../../VCList/head/next/next/contents/boothList/head/next/next/contents/appointmentList/head/next/next/contents"/>
+                      <outer-class reference="../../../.."/>
+                    </next>
+                    <contents class="com.example.vaccinationcenterca1.Appointment" reference="../../../../../../../../../VCList/head/next/next/contents/boothList/head/next/next/contents/appointmentList/head/next/contents"/>
+                    <outer-class reference="../../.."/>
+                  </next>
+                  <contents class="com.example.vaccinationcenterca1.Appointment" reference="../../../../../../../../VCList/head/next/next/contents/boothList/head/next/next/contents/appointmentList/head/contents"/>
+                  <outer-class reference="../.."/>
+                </head>
+              </patientList>
+            </contents>
+            <outer-class reference="../../../.."/>
+          </next>
+          <contents class="com.example.vaccinationcenterca1.Patient">
+            <patientId>2</patientId>
+            <patientName>1</patientName>
+            <dateOfBirth>1</dateOfBirth>
+            <eircode>1</eircode>
+            <patientAccessibility>1</patientAccessibility>
+            <patientList/>
+          </contents>
+          <outer-class reference="../../.."/>
+        </next>
+        <contents class="com.example.vaccinationcenterca1.Patient">
+          <patientId>3</patientId>
+          <patientName>1</patientName>
+          <dateOfBirth>1</dateOfBirth>
+          <eircode>1</eircode>
+          <patientAccessibility>1</patientAccessibility>
+          <patientList/>
+        </contents>
+        <outer-class reference="../.."/>
+      </head>
+    </patientList>
+    <boothList>
+      <head>
+        <next>
+          <next>
+            <contents class="com.example.vaccinationcenterca1.Booth" reference="../../../../../VCList/head/next/next/contents/boothList/head/next/next/contents"/>
+            <outer-class reference="../../../.."/>
+          </next>
+          <contents class="com.example.vaccinationcenterca1.Booth" reference="../../../../VCList/head/next/next/contents/boothList/head/next/contents"/>
+          <outer-class reference="../../.."/>
+        </next>
+        <contents class="com.example.vaccinationcenterca1.Booth" reference="../../../VCList/head/next/next/contents/boothList/head/contents"/>
+        <outer-class reference="../.."/>
+      </head>
+    </boothList>
+    <appointmentList>
+      <head>
+        <next>
+          <contents class="com.example.vaccinationcenterca1.Appointment" reference="../../../../VCList/head/next/next/contents/boothList/head/next/next/contents/appointmentList/head/next/next/contents"/>
+          <outer-class reference="../../.."/>
+        </next>
+        <contents class="com.example.vaccinationcenterca1.Appointment" reference="../../../VCList/head/next/next/contents/boothList/head/next/next/contents/appointmentList/head/next/contents"/>
+        <outer-class reference="../.."/>
+      </head>
+    </appointmentList>
+    <patientRecordList>
+      <head>
+        <contents class="string">Patient id : 1 Patient name : 1 Date of birth : 1 Eircode : 1 Accessibility : 1 Date : 1 Time : 1 Vaccination type :  1 Batch number :  1 Vaccinator details : 1 Patient ID : 1</contents>
+        <outer-class reference="../.."/>
+      </head>
+    </patientRecordList>
+  </com.example.vaccinationcenterca1.Main_-Data>
+</object-stream>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.vaccinationcenterca1.Controllers.BoothController">
+   <center>
+      <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label text="Vaccination Centres" />
+            <ChoiceBox fx:id="vcChoiceBox" prefWidth="150.0">
+               <VBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </VBox.margin>
+            </ChoiceBox>
+            <TextField fx:id="boothId" alignment="CENTER" promptText="Booth Identifier eg.A2" />
+            <TextField fx:id="floorLevel" alignment="CENTER" promptText="Floor Level" />
+            <TextField fx:id="accessibility" alignment="CENTER" promptText="Accessibility Information" />
+            <Button fx:id="addBooth" contentDisplay="CENTER" mnemonicParsing="false" onAction="#addBooth" text="Add Booth">
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </Button>
+            <Button fx:id="deleteBooth" mnemonicParsing="false" onAction="#deleteBooth" text="Delete Booth" />
+
+            <Label text="Booths" />
+            <ListView fx:id="boothListView" prefHeight="200.0" prefWidth="200.0" />
+         </children>
+      </VBox>
+   </center>
+   <top>
+      <Label text="Vaccination Booth" BorderPane.alignment="CENTER">
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </Label>
+   </top>
+   <bottom>
+
+   </bottom>
+</BorderPane>

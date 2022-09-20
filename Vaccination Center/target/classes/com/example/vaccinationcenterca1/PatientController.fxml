@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.vaccinationcenterca1.Controllers.PatientController">
+   <center>
+      <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+         <children>
+            <TextField fx:id="patientId" alignment="CENTER" promptText="Patient identifier">
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </TextField>
+            <TextField fx:id="patientName" alignment="CENTER" promptText="Patient name">
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </TextField>
+            <TextField fx:id="dateOfBirth" alignment="CENTER" promptText="Date of Birth">
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </TextField>
+            <TextField fx:id="eircode" alignment="CENTER" promptText="Eircode">
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </TextField>
+            <TextField fx:id="patientAccessibility" alignment="CENTER" promptText="Accessibility">
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </TextField>
+            <Button fx:id="addPatient" mnemonicParsing="false" onAction="#addPatient" text="Add Patient">
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </Button>
+            <Button fx:id="deletePatient" mnemonicParsing="false" onAction="#deletePatient" text="Delete Patient" />
+            <Label text="Patients" />
+            <ListView fx:id="patientListView" prefHeight="200.0" prefWidth="200.0" />
+            <Label text="Patient Record" />
+            <ListView fx:id="patientRecordListView" prefHeight="200.0" prefWidth="200.0" />
+         </children>
+      </VBox>
+   </center>
+   <top>
+      <Label text="Patient" BorderPane.alignment="CENTER" />
+   </top>
+   <bottom>
+
+   </bottom>
+</BorderPane>
